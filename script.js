@@ -23,7 +23,9 @@ const possibleoutcomes = [0, 1, 2, 3, 4, 5, 6, "W"];
 
 strikebutton.onclick = () => {
    ballsfaced++;
-   
+   if (team2score > team1score) {
+      finished();
+   }
    if (turn === 1) {
       var score = possibleoutcomes[Math.floor(Math.random() * possibleoutcomes.length)];
       console.log(score);
