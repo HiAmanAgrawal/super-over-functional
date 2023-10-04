@@ -57,7 +57,7 @@ strikebutton.onclick = () => {
          $team2score.innerText = team2score;
          document.querySelector(`#team2-superover .ball:nth-child(${ballsfaced})`).innerHTML = score;
       }
-      if (ballsfaced == 6 || team1wickets == 2 || team2wickets == 2) {
+      if (ballsfaced == 6 || team2wickets == 2) {
          turn = 3;
          finished()
       }
