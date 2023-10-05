@@ -56,9 +56,7 @@ strikeButton.onclick = () => {
 
   if (turn === 1) {
     team1BallsFaced++;
-    document.querySelector(
-      `#team1-superover div:nth-child(${team1BallsFaced})`
-    ).textContent = score;
+    document.querySelector(`#team1-superover div:nth-child(${team1BallsFaced})`).textContent = score;
     if (score === "W") {
       team1Wickets++;
     } else {
@@ -68,7 +66,5 @@ strikeButton.onclick = () => {
   }
   updateScore();
 
-  resetButton.onclick = () => {
-   window.location.reload();
- }
+  resetButton.onclick = () => {window.location.reload();}
 };
